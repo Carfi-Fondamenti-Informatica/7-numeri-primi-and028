@@ -1,1 +1,1 @@
-
+bool primo (int,int);
