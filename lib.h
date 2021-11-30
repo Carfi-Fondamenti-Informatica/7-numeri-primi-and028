@@ -1,5 +1,1 @@
-
-
-bool primo (int,int);
-
-
+int primo (int,int);
