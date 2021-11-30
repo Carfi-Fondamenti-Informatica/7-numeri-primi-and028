@@ -2,21 +2,22 @@
 
 bool primo (int a, int b) {
 
+    if ((a%b==0) && (a==b))  {
 
-    int modulo=a%b;
-
-
-    if (modulo!=0)  {
-
-        primo(a,b+1);
 
         return true;
 
-    } else {
+    } else if (a%b==0) {
+
         return false;
+
+    } else {
+
+        primo(a,b+1);
 
     }
 
 
 
 }
+
