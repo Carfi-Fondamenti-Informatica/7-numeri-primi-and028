@@ -6,8 +6,7 @@ int main() {
 
     std::cin>>a;
 
-    primo(a,b);
-
+    
 
     if (primo(a,b)){
         std::cout<<"numero  primo"<<std::endl;
