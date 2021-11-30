@@ -22,6 +22,12 @@ int primo (int a, int b) {
     }
 
 
+
+    if (a%2==0) {
+    return 0;
+}
+
+
     if ((a%b==0) && (a%1==0) && (a==b))  {
 
 
@@ -33,11 +39,19 @@ int primo (int a, int b) {
 
     } else {
 
-        primo(a,b+1);
+        int contatore=0;
+        contatore++;
 
-        return primo(a,b+1);
+        primo(a,b+2);
 
 
+
+        if ((a%(b+contatore+1)==0) && (a!=(b+contatore+1))) {
+            return 0;
+        } else {
+
+            return 1;
+        }
 
 
     }
@@ -45,3 +59,4 @@ int primo (int a, int b) {
 
 
 }
+
