@@ -1,15 +1,35 @@
 #include "lib.h"
 
-bool primo (int a, int b) {
-
-    if ((a%b==0) && (a==b))  {
+int primo (int a, int b) {
 
 
-        return true;
+    if (a==0) {
+        return 0;
+    }
+
+
+
+
+    if (a==1) {
+        return 0;
+    }
+
+
+
+
+    if (a==2) {
+        return 1;
+    }
+
+
+    if ((a%b==0) && (a%1==0) && (a==b))  {
+
+
+        return 1;
 
     } else if (a%b==0) {
 
-        return false;
+        return 0;
 
     } else {
 
@@ -20,4 +40,5 @@ bool primo (int a, int b) {
 
 
 }
+
 
