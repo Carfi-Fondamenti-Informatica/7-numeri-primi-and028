@@ -2,19 +2,18 @@
 #include "lib.h"
 int main() {
 
-    int a=0,b=3;
+    int a=0;
 
     std::cin>>a;
 
 
 
-
-
-    if ( primo(a,b)){
-        std::cout<<"numero  primo"<<std::endl;
-    } else {
-        std::cout<<"numero non primo"<<std::endl;
+    if (primo(a,2)) {
+        std::cout<<"primo";
+    } else{
+        std::cout<<"non primo";
     }
+
 
     return 0;
 }
