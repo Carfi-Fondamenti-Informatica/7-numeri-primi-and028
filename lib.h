@@ -1,2 +1,2 @@
 
-int primo (int,int);
+a
